@@ -1,0 +1,17 @@
+.gradient-orange {
+  @apply bg-gradient-to-br from-sierra-orange to-orange-600;
+}
+
+.gradient-overlay {
+  @apply bg-gradient-to-br from-sierra-orange/90 to-orange-600/90 mix-blend-multiply;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-sierra-orange to-orange-600;
+}
+
+.gradient-border {
+  background: linear-gradient(to right, #e85414, #c2410c);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}

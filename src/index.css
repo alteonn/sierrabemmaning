@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased text-sierra-dark bg-sierra-light;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center px-6 py-3 bg-sierra-orange text-white font-semibold rounded-lg 
+           hover:bg-orange-600 transition-all duration-300 shadow-sierra hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center px-6 py-3 bg-white text-sierra-orange font-semibold rounded-lg 
+           hover:bg-gray-50 transition-all duration-300 shadow-sierra hover:shadow-lg;
+  }
+
+  .section-title {
+    @apply text-4xl font-bold text-sierra-dark mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-sierra-gray mb-12 max-w-2xl mx-auto;
+  }
+}
+
+.gradient-mask {
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
