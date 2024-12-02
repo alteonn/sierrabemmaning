@@ -7,61 +7,38 @@ const features = [
   {
     icon: Shield,
     title: "Trygg arbetsgivare",
-    description: "Vi värnar om våra medarbetare",
-    delay: 0.2
+    description: "Vi värnar om våra medarbetare"
   },
   {
     icon: Clock,
     title: "10+ års erfarenhet",
-    description: "Lång erfarenhet inom bemanning",
-    delay: 0.4
+    description: "Lång erfarenhet inom bemanning"
   },
   {
     icon: Users,
     title: "Starka referenser",
-    description: "Samarbete med ledande företag",
-    delay: 0.6
+    description: "Samarbete med ledande företag"
   }
 ];
 
 const PartnerSection = () => {
-  const fadeInUp = {
-    initial: { opacity: 0, y: 20 },
-    whileInView: { opacity: 1, y: 0 },
-    viewport: { once: true },
-    transition: { duration: 0.6 }
-  };
-
   return (
     <section className="relative overflow-hidden bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
         <div className="text-center">
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="inline-block"
-          >
+          <div className="inline-block">
             <h2 className="text-3xl font-bold text-sierra-orange mb-2">SIERRA</h2>
             <div className="w-full h-1 bg-sierra-orange/30 rounded-full" />
-          </motion.div>
+          </div>
 
-          <motion.h3 
-            {...fadeInUp}
-            className="text-5xl md:text-6xl font-bold text-sierra-dark mt-6 mb-8"
-          >
+          <h3 className="text-5xl md:text-6xl font-bold text-sierra-dark mt-6 mb-8">
             Din trygga partner
-          </motion.h3>
+          </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
             {features.map((feature, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: feature.delay }}
                 className="bg-sierra-light rounded-2xl p-8 shadow-sierra hover:shadow-lg transition-all duration-300"
               >
                 <motion.div 
@@ -77,29 +54,19 @@ const PartnerSection = () => {
             ))}
           </div>
 
-          <motion.p 
-            {...fadeInUp}
-            className="text-lg max-w-3xl mx-auto mb-12 text-sierra-gray leading-relaxed"
-          >
+          <p className="text-lg max-w-3xl mx-auto mb-12 text-sierra-gray leading-relaxed">
             Vi samarbetar med Sveriges ledande företag inom olika branscher och har över 10 års erfarenhet av bemanning. Tack vare detta har vi mycket goda referenser och är en trygg arbetsgivare där vi specialiserat oss på att locka fram den inneboende potentialen hos våra arbetstagare
-          </motion.p>
+          </p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.8 }}
+          <motion.a
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            href="/jobba-med-oss"
+            className="inline-flex items-center px-8 py-4 bg-sierra-orange text-white font-bold rounded-lg hover:bg-orange-600 transition-colors shadow-lg group"
           >
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              href="/jobba-med-oss"
-              className="inline-flex items-center px-8 py-4 bg-sierra-orange text-white font-bold rounded-lg hover:bg-orange-600 transition-colors shadow-lg group"
-            >
-              JOBBA MED OSS
-              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </motion.a>
-          </motion.div>
+            JOBBA MED OSS
+            <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+          </motion.a>
         </div>
       </div>
     </section>

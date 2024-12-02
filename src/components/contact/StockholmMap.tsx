@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { defaultAnimationConfig } from '../../utils/animations';
 
 interface Location {
   name: string;
@@ -30,18 +29,12 @@ const StockholmMap = () => {
   return (
     <div className="relative h-[600px] w-full bg-[#FFF5F2] rounded-xl overflow-hidden">
       <div className="absolute inset-0">
-        {/* Map Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-white to-sierra-orange/5" />
 
-        {/* Locations */}
         <div className="relative w-full h-full">
           {locations.map((location, index) => (
-            <motion.div
+            <div
               key={index}
-              {...defaultAnimationConfig}
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2 + index * 0.1 }}
               className="absolute transform -translate-x-1/2 -translate-y-1/2"
               style={{
                 top: location.position.top,
@@ -50,86 +43,33 @@ const StockholmMap = () => {
               }}
             >
               {location.isMain ? (
-                // Main Location (Österhaninge)
                 <div className="relative">
-                  {/* Pulse Animation */}
-                  <motion.div
-                    className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    <motion.div
-                      className="absolute w-16 h-16 bg-sierra-orange/20 rounded-full"
-                      animate={{
-                        scale: [1, 2.5],
-                        opacity: [0.6, 0]
-                      }}
-                      transition={{
-                        duration: 2,
-                        repeat: Infinity,
-                        ease: "easeOut"
-                      }}
-                    />
-                    <motion.div
-                      className="absolute w-16 h-16 bg-sierra-orange/20 rounded-full"
-                      animate={{
-                        scale: [1, 2.5],
-                        opacity: [0.6, 0]
-                      }}
-                      transition={{
-                        duration: 2,
-                        repeat: Infinity,
-                        ease: "easeOut",
-                        delay: 1
-                      }}
-                    />
-                  </motion.div>
-
-                  {/* Marker */}
                   <div className="relative">
                     <div className="w-6 h-6 bg-sierra-orange rounded-full border-4 border-white shadow-lg" />
-                    {/* Label */}
                     <div className="absolute top-8 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
-                      <motion.div 
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 1 }}
-                        className="bg-white px-4 py-2 rounded-lg shadow-lg"
-                      >
+                      <div className="bg-white px-4 py-2 rounded-lg shadow-lg">
                         <p className="text-sm font-medium text-sierra-dark">
                           {location.name}
                         </p>
-                      </motion.div>
+                      </div>
                     </div>
                   </div>
                 </div>
               ) : (
-                // Other Locations
                 <div className="relative group">
                   <div className="w-2 h-2 bg-sierra-orange/30 rounded-full" />
                   <div className="absolute top-4 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
-                    <motion.p 
-                      className="text-xs text-sierra-gray opacity-70 group-hover:opacity-100 transition-opacity bg-white/80 px-2 py-1 rounded"
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ delay: 0.5 + index * 0.1 }}
-                    >
+                    <p className="text-xs text-sierra-gray opacity-70 group-hover:opacity-100 transition-opacity bg-white/80 px-2 py-1 rounded">
                       {location.name}
-                    </motion.p>
+                    </p>
                   </div>
                 </div>
               )}
-            </motion.div>
+            </div>
           ))}
 
-          {/* Connecting Lines */}
           <svg className="absolute inset-0 w-full h-full pointer-events-none">
-            <motion.g
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 0.1 }}
-              transition={{ delay: 0.5 }}
-            >
+            <g className="opacity-10">
               {locations.map((location, index) => (
                 <line
                   key={index}
@@ -143,7 +83,7 @@ const StockholmMap = () => {
                   className="opacity-20"
                 />
               ))}
-            </motion.g>
+            </g>
           </svg>
         </div>
       </div>

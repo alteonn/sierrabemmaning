@@ -1,18 +1,10 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { Cookie } from 'lucide-react';
 import Container from '../components/common/Container';
 import SectionTitle from '../components/common/SectionTitle';
 import SEO from '../components/common/SEO';
 
 const Cookies = () => {
-  const fadeInUp = {
-    initial: { opacity: 0, y: 20 },
-    whileInView: { opacity: 1, y: 0 },
-    viewport: { once: true },
-    transition: { duration: 0.6 }
-  };
-
   const sections = [
     {
       title: "Vad är cookies?",
@@ -62,10 +54,7 @@ const Cookies = () => {
       <section className="bg-white py-16 md:py-24">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <motion.div 
-              className="text-center mb-16"
-              {...fadeInUp}
-            >
+            <div className="text-center mb-16">
               <div className="w-16 h-16 bg-sierra-orange rounded-full flex items-center justify-center mx-auto mb-6">
                 <Cookie className="w-8 h-8 text-white" />
               </div>
@@ -73,20 +62,12 @@ const Cookies = () => {
                 title="Cookies"
                 subtitle="Sierra Bemanning AB (556917-7412)"
               />
-            </motion.div>
+            </div>
 
-            <motion.div 
-              className="space-y-12"
-              {...fadeInUp}
-              transition={{ delay: 0.2 }}
-            >
+            <div className="space-y-12">
               {sections.map((section, index) => (
-                <motion.div
+                <div
                   key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
                   className="bg-sierra-light rounded-xl p-8"
                 >
                   <h2 className="text-2xl font-bold text-sierra-dark mb-4">{section.title}</h2>
@@ -108,16 +89,10 @@ const Cookies = () => {
                       ))}
                     </div>
                   )}
-                </motion.div>
+                </div>
               ))}
 
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: sections.length * 0.1 }}
-                className="bg-sierra-light rounded-xl p-8"
-              >
+              <div className="bg-sierra-light rounded-xl p-8">
                 <h2 className="text-2xl font-bold text-sierra-dark mb-4">Kontakta oss</h2>
                 <p className="text-sierra-gray mb-4">
                   Om du har frågor om hur vi använder cookies, kontakta oss på:
@@ -129,8 +104,8 @@ const Cookies = () => {
                   <p className="mt-2">E-post: albert@sierrabemanning.se</p>
                   <p>Telefon: 070-778 88 47</p>
                 </div>
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
           </div>
         </Container>
       </section>
