@@ -67,7 +67,7 @@ const Andningsskydd = () => {
               Nya krav på tillpassningstest för andningsskydd
             </h1>
             <p className="text-xl text-sierra-gray mb-8">
-              Det är tydligt att Arbetsmiljöverket inför nya krav på tillpassningstest för tätsittande andningsskydd från och med den 1 januari 2025. För att säkerställa att dessa krav efterlevs, är det viktigt för arbetsgivare att agera proaktivt.
+              Arbetsmiljöverket inför nya krav på tillpassningstest för tätsittande andningsskydd från och med den 1 januari 2025. För att säkerställa att dessa krav efterlevs, är det viktigt för arbetsgivare att agera proaktivt.
             </p>
           </div>
         </Container>
