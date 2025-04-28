@@ -84,7 +84,7 @@ const JobSeekers = () => {
               <div className="space-y-8">
                 <div className="text-center">
                   <h3 className="text-2xl font-bold text-sierra-dark mb-2">Albert Zeka</h3>
-                  <p className="text-sierra-gray text-lg">VVD Sierra Bemanning AB</p>
+                  <p className="text-sierra-gray text-lg">VD Sierra Bemanning AB</p>
                 </div>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -109,7 +109,7 @@ const JobSeekers = () => {
                   className="flex items-center justify-center space-x-3 bg-white rounded-lg p-4 text-sierra-dark"
                 >
                   <MapPin className="text-sierra-orange flex-shrink-0" size={24} />
-                  <span>Albybergsringen 105 Lokal 10, 137 69 Österhaninge</span>
+                  <span>Kronborgsgränd 11 , 164 46 Kista</span>
                 </div>
               </div>
             </div>
