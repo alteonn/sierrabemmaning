@@ -17,7 +17,7 @@ const ContactInfo = () => {
     },
     {
       icon: MapPin,
-      text: 'Albybergsringen 105 Lokal 10, 137 69 Österhaninge'
+      text: 'Kronborgsgränd 11 , 164 46 Kista'
     }
   ];
 
