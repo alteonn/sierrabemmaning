@@ -105,8 +105,8 @@ const PrivacyPolicy = () => {
                 </p>
                 <div className="text-sierra-gray">
                   <p>Sierra Bemanning AB</p>
-                  <p>Albybergsringen 105 Lokal 10</p>
-                  <p>137 69 Österhaninge</p>
+                  <p>Kronborgsgränd 11a</p>
+                  <p>164 46 Kist</p>
                   <p className="mt-2">E-post: albert@sierrabemanning.se</p>
                   <p>Telefon: 070-778 88 47</p>
                 </div>
