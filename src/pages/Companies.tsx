@@ -159,7 +159,7 @@ const Companies = () => {
                   className="flex items-center justify-center space-x-3 bg-sierra-light rounded-lg p-4 text-sierra-dark"
                 >
                   <MapPin className="text-sierra-orange flex-shrink-0" size={24} />
-                  <span>Albybergsringen 105 Lokal 10, 137 69 Österhaninge</span>
+                  <span>Kronborgsgränd 11 , 164 46 Kista</span>
                 </div>
               </div>
             </div>
