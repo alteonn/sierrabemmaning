@@ -39,7 +39,7 @@ const Footer = () => {
               </a>
               <div className="flex items-start text-gray-400">
                 <IconWrapper icon={MapPin} size="default" className="mr-3 mt-1 text-sierra-orange flex-shrink-0" />
-                <p>Albybergsringen 105 Lokal 10,<br />137 69 Österhaninge</p>
+                <p>Kronborgsgränd 11<br />164 46 Kista</p>
               </div>
             </div>
           </motion.div>
