@@ -134,7 +134,7 @@ const Companies = () => {
               <div className="space-y-8">
                 <div className="text-center">
                   <h3 className="text-2xl font-bold text-sierra-dark mb-2">Albert Zeka</h3>
-                  <p className="text-sierra-gray text-lg">VVD Sierra Bemanning AB</p>
+                  <p className="text-sierra-gray text-lg">VD Sierra Bemanning AB</p>
                 </div>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
