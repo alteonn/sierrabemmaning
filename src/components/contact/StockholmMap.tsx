@@ -12,18 +12,18 @@ interface Location {
 
 const StockholmMap = () => {
   const locations: Location[] = [
-    { name: 'Stockholm', position: { top: '25%', left: '48%' } },
-    { name: 'Södertälje', position: { top: '65%', left: '25%' } },
-    { name: 'Nynäshamn', position: { top: '90%', left: '52%' } },
-    { name: 'Nacka', position: { top: '35%', left: '65%' } },
-    { name: 'Haninge', position: { top: '55%', left: '60%' } },
-    { name: 'Tyresö', position: { top: '40%', left: '70%' } },
-    { name: 'Huddinge', position: { top: '45%', left: '40%' } },
-    { name: 'Botkyrka', position: { top: '50%', left: '30%' } },
-    { name: 'Salem', position: { top: '55%', left: '20%' } },
-    { name: 'Värmdö', position: { top: '30%', left: '75%' } },
-    { name: 'Lidingö', position: { top: '20%', left: '55%' } },
-    { name: 'Österhaninge', position: { top: '70%', left: '58%' }, isMain: true }
+    { name: 'Kista', position: { top: '20%', left: '45%' }, isMain: true },
+{ name: 'Sollentuna', position: { top: '25%', left: '48%' } },
+{ name: 'Solna', position: { top: '30%', left: '50%' } },
+{ name: 'Sundbyberg', position: { top: '28%', left: '48%' } },
+{ name: 'Täby', position: { top: '20%', left: '55%' } },
+{ name: 'Danderyd', position: { top: '22%', left: '52%' } },
+{ name: 'Vallentuna', position: { top: '15%', left: '58%' } },
+{ name: 'Upplands Väsby', position: { top: '10%', left: '45%' } },
+{ name: 'Bromma', position: { top: '32%', left: '45%' } },
+{ name: 'Spånga', position: { top: '25%', left: '43%' } },
+{ name: 'Hässelby', position: { top: '28%', left: '40%' } },
+{ name: 'Rinkeby', position: { top: '27%', left: '46%' } },
   ];
 
   return (
