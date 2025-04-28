@@ -181,7 +181,7 @@ Denna innovativa teknik genomför det snabbaste, enklaste och mest precisa tillp
               <div className="space-y-8">
                 <div>
                   <h3 className="text-2xl font-bold text-sierra-dark mb-2">Albert Zeka</h3>
-                  <p className="text-sierra-gray text-lg">VVD Sierra Bemanning AB</p>
+                  <p className="text-sierra-gray text-lg">VD Sierra Bemanning AB</p>
                 </div>
                 
                 <div className="flex flex-col md:flex-row items-center justify-center gap-8">
@@ -203,7 +203,7 @@ Denna innovativa teknik genomför det snabbaste, enklaste och mest precisa tillp
 
                 <div className="flex items-center justify-center text-sierra-gray">
                   <MapPin className="mr-2 flex-shrink-0" />
-                  <p>Albybergsringen 105 Lokal 10, 137 69 Österhaninge</p>
+                  <p>Kronborgsgränd 11 , 164 46 Kista</p>
                 </div>
               </div>
             </div>
