@@ -50,7 +50,7 @@ const Contact = () => {
             <div className="space-y-8">
               <div className="bg-white rounded-xl shadow-sierra p-8">
                 <h3 className="text-2xl font-bold text-sierra-dark mb-6">Albert Zeka</h3>
-                <p className="text-sierra-gray text-lg mb-8">VVD Sierra Bemanning AB</p>
+                <p className="text-sierra-gray text-lg mb-8">VD Sierra Bemanning AB</p>
                 
                 <div className="space-y-6">
                   {contactInfo.map((item, index) => (
